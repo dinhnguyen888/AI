@@ -1,0 +1,24 @@
+<configuration>
+    <input>
+        <net-file value="hello.net.xml"/>
+        <route-files value="hello.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="10000"/>
+    </time>
+
+    <vehicles>
+        <vType id="Car" length="2.0" maxSpeed="100.0"/>
+        <vType id="SlowCar" length="2.0" maxSpeed="50.0"/>
+
+        <flow begin="188" end="10000" id="flow1" route="route0" type="Car"/>
+        <flow begin="208" end="10000" id="flow2" route="route0" type="Car"/>
+        <flow begin="218" end="10000" id="flow3" route="route0" type="Car"/>
+
+        <flow begin="88" end="10000" id="flow4" route="route1" type="SlowCar"/>
+        <flow begin="193" end="10000" id="flow5" route="route1" type="SlowCar"/>
+        <flow begin="193" end="10000" id="flow6" route="route1" type="SlowCar"/>
+    </vehicles>
+</configuration>
